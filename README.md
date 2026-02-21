@@ -8,9 +8,7 @@
 ![React](https://img.shields.io/badge/react-18.2.0-blue)
 ![Contributions](https://img.shields.io/badge/contributions-welcome-orange)
 
-**A production-ready, open-source IoT device management platform with real-time monitoring, drag-and-drop dashboards, and enterprise-grade security.**
-
-[Features](#-key-features) • [Quick Start](#-quick-start-5-minutes) • [Documentation](#-documentation) • [API Reference](#-api-reference) • [Contributing](#-contributing) • [License](#-license)
+**A production-ready, open-source IoT device management platform.**
 
 </div>
 
