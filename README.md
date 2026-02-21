@@ -314,7 +314,7 @@ cd scripts
 node setup-all-tables.js
 # Or use npm script:
 cd ..
-npm run setup-aws
+npm run setup-all-tables
 
 # Start backend development server
 npm run dev
