@@ -1,0 +1,59 @@
+{
+  "name": "iot-platform-backend",
+  "version": "1.0.0",
+  "description": "IoT Device Management Platform - Backend API Server",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest",
+    "prod": "NODE_ENV=production node src/server.js",
+    "deploy": "vercel --prod",
+    "build": "echo 'No build step required for Node.js backend'",
+    "health": "Invoke-RestMethod -Uri 'http://localhost:3001/health'",
+    "logs": "vercel logs",
+    "verify": "node deploy-verification.js",
+    "precheck": "node scripts/pre-deployment-check.js",
+    "setup-tables": "node scripts/setup-all-tables.js"
+  },
+  "keywords": [
+    "iot",
+    "backend",
+    "api",
+    "nodejs",
+    "express",
+    "websocket",
+    "dynamodb",
+    "aws",
+    "serverless"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.654.0",
+    "@aws-sdk/lib-dynamodb": "^3.654.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.6.4",
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishnu-2702/iot-platform-backend.git"
+  }
+}

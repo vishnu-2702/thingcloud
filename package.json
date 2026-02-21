@@ -1,0 +1,48 @@
+{
+  "name": "iot-device-management-platform",
+  "version": "1.0.0",
+  "description": "Scalable cloud IoT device management and monitoring platform",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "start": "cd backend && npm start",
+    "test": "cd backend && npm test && cd ../frontend && npm test",
+    "lint": "cd backend && npm run lint && cd ../frontend && npm run lint",
+    "deploy": "node deploy.js",
+    "deploy:backend": "cd backend && vercel --prod",
+    "deploy:frontend": "cd frontend && npm run build && vercel --prod",
+    "clean": "rm -rf node_modules backend/node_modules frontend/node_modules backend/dist frontend/dist"
+  },
+  "keywords": [
+    "iot",
+    "device-management",
+    "monitoring",
+    "aws",
+    "dynamodb",
+    "react",
+    "nodejs",
+    "websocket",
+    "telemetry"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "your-repo-url"
+  },
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
