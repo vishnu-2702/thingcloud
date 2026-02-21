@@ -34,10 +34,6 @@
 - [Testing](#-testing)
 - [Troubleshooting](#-troubleshooting)
 - [Contributing](#-contributing)
-- [Roadmap](#-roadmap)
-- [License](#-license)
-- [Support](#-support--community)
-- [Acknowledgments](#-acknowledgments)
 
 ---
 
